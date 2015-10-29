@@ -1,13 +1,29 @@
 ---
 layout: default
 ---
-###News 
-
 {% if site.categories.news %}
 <h2>News</h2>
 {% endif %}
 <div class="posts">
   {% for post in site.categories.news %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
+
+{% if site.categories.term %}
+<h2>Term</h2>
+{% endif %}
+<div class="posts">
+  {% for post in site.categories.term %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
