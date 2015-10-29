@@ -3,6 +3,9 @@ layout: default
 ---
 ###News 
 
+{% if site.categories.news %}
+<h2>News</h2>
+{% endif %}
 <div class="posts">
   {% for post in site.categories.news %}
     <article class="post">
@@ -18,7 +21,9 @@ layout: default
   {% endfor %}
 </div>
 
-###Posts
+{% if site.posts %}
+<h2>Posts</h2>
+{% endif %}
 
 <div class="posts">
   {% for post in site.posts %}
