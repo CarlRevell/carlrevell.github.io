@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
-{% if site.categories.news %}
 <h2>News</h2>
-{% endif %}
 <div class="posts">
+{% if site.categories.news %}
+  <p>No news is good new, no?</p>
+{% else %}
   {% for post in site.categories.news %}
     <article class="post">
 
@@ -17,6 +18,7 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+{% endif %}
 </div>
 
 {% if site.categories.term %}
