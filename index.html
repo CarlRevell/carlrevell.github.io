@@ -3,7 +3,7 @@ layout: default
 ---
 <h2>News</h2>
 <div class="posts">
-{% if !site.categories.news %}
+{% if site.categories.news.size == 0 %}
   <p>No news.</p>
 {% else %}
   {% for post in site.categories.news %}
