@@ -6,7 +6,7 @@ title: You're up and running!
 ##People
 {% for member in site.data.translation %}
 <li>{{ member.name }} : {{ member.colour }}</li>
-{% endfof %}
+{% endfor %}
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
