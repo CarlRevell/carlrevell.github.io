@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First Post
+category: news
 ---
 
 Lorem ipsum dolor sit amet.
