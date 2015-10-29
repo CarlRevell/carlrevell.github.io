@@ -3,7 +3,7 @@ layout: post
 title: You're up and running!
 ---
 
-##People
+##People Lorem
 {% for member in site.data.translation %}
 <li>{{ member.name }} : {{ member.colour }}</li>
 {% endfor %}
